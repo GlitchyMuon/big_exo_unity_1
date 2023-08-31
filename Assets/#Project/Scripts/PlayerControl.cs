@@ -30,7 +30,7 @@ public class PlayerControl : MonoBehaviour
     void Update()
     {
         MoveX();
-        AutomaticMoveZ();
+        AutoMoveZ();
     }
 
     private void MoveX()
@@ -40,7 +40,7 @@ public class PlayerControl : MonoBehaviour
 
     }
 
-    private void AutomaticMoveZ()
+    private void AutoMoveZ()
     {
         Vector3 direction = transform.forward;
         transform.position += direction * Time.deltaTime * speed;
